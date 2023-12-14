@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podomoro Kevin Galvis</title>
+    <link rel="stylesheet" href="Css/main.css">
+    <link rel="shortcut icon" href="Assets/reloj-de-pulsera.png">
+</head>
+<body>
+    <header class="cont-header">
+        <div class="header-logo">
+            <img src="Assets/Logo-Color.png" alt="logoHeader" class="img-logo-header">
+            <div class="text-header-logo">
+                <p class="p-text-header">PODOMORO<br><span class="span-text">ONLINE</span></p>
+                <hr class="hr-style">
+                <p class="p-text-kevin">Kevin David Zambrano Galvis <br>Desarrollador Web</p>
+            </div>
+        </div>
+        <div class="header-text">
+            <p>Focused Goals</p>
+        </div>
+    </header>
+
+    <main class="cont-view-podomoro">
+        <div class="cont-tareas-podomoro">
+            <div class="cont-form-podomoro">
+                <h4>Agrege sus tareas podomoros</h4>
+                <hr style="width: 90%; margin: 0 auto;">
+                <form action="" class="form-podomoro">
+                    <label for="name" class="label-form">Nombre Tarea</label>
+                    <input type="text" name="name" id="name" class="input-podomoro">
+
+                    <label for="" class="label-form">Tiempo Podomoro</label>
+                    <div class="cont-podomoro-timer" id="check-timer-podomoro">
+                        
+                         
+                            <div for="" class="group_check" id="group_check">
+                                <input type="radio" name="checkbox1" id="checkbox15" class="checkbox-timer checkbox" value="15" >
+                                <label for="checkbox15" class="text-checkbox">15 Minutos</label>
+                            </div>
+                            <div for="" class="group_check" id="group_check">
+                                <input type="radio" name="checkbox1" id="checkbox25" class="checkbox-timer checkbox" value="25" >
+                                <label for="checkbox25" class="text-checkbox">25 Minutos</label>
+                            </div>
+                            <div for="" class="group_check" id="group_check">
+                                <input type="radio" name="checkbox1" id="checkbox60" class="checkbox-timer checkbox" value="60">
+                                <label for="checkbox60" class="text-checkbox">60 Minutos</label>
+                            </div>
+                    </div>
+
+                    <label for="" class="label-form">Tiempo Descanso</label>
+                    <div class="cont-podomoro-timer">
+                       <div for="" class="group_checkBreak" id="group_break">
+                            <input type="radio" name="checkBreak" id="checkBreak5" class="checkboxBreak Break" value="5">
+                            <label for="checkBreak5" class="">5 Descanso</label>
+                        </div>
+                       <div for="" class="group_checkBreak" id="group_break">
+                            <input type="radio" name="checkBreak" id="checkBreak15" class="checkboxBreak Break" value="15">
+                            <label for="checkBreak15" class="">15 Descanso</label>
+                        </div> 
+                    </div>
+
+                    <label for="" class="label-form">Repetir Este Podomoro</label>
+                    <input type="number" name="" id="repts" class="input-rept" min="1" max="5">
+
+                    <hr style="width: 90%; margin: 10px auto; ">
+                    <div class="cont-podomoro-submit">
+                        <button type="submit" id="submit" class="btn-podomoro-timer" style="background-color: #1C618C; color: #fff;">Agregar Tarea</button>
+                    </div>
+                </form>
+            </div>
+
+
+             
+            <div class="cont-list-podomoro">
+                <h4>Mis Lista de Tareas</h4>
+                <hr style="width: 90%; margin: 0 auto;">
+                <table class="tabla-list" >
+                    <tr>
+                        <th>Tarea</th>
+                        <th>Podomoro</th>
+                        <th>Descanso</th>
+                        <th>Repts </th>
+                      </tr>
+                      
+                    <tbody id="tabla-list">
+                        
+                    </tbody>
+                  
+
+                  
+                   
+                  </table>
+            </div>
+        </div>
+
+        
+        <div class="podomoro">
+            <div class="podomoro-info">
+                <h2>PODOMORO</h2>
+                <p id="timePodomoro">00:00</p>
+                <h2 id="titlePodomoro">Sin tareas</h2>
+                
+                    <button id="detenerPodomoro">Cancelar</button>
+               
+            </div>
+        </div>
+    </main>
+
+
+    <script src="Js/main.js"></script>
+</body>
+</html>

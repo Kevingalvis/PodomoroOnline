@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/*creamos el header el cual contiene el logo*/
+.cont-header{
+    width: 100%;
+    height: 10rem; /*160PX*/
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    border-bottom: 1px #1C618C solid;
+    box-shadow: 0px 1px 5px 0px  #1C618C;
+
+  
+}
+.header-logo{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.img-logo-header{
+    height: 100%;
+    filter: drop-shadow(1px 5px 2px #000);
+
+   
+}
+.text-header-logo{
+    width: 60%;
+    height: 100%;
+    
+}
+.p-text-header{
+    font-size: 2.2rem; /*35.2PX*/
+    letter-spacing: 0.2rem;
+    line-height: 2rem; /*32px*/
+    color: #1C618C;
+    padding: 0.5rem;
+    
+}
+.span-text{
+    color: #2889c5;
+    font-size: 2rem;
+}
+.hr-style{
+    width: 100%;
+    border-color: #1C618C;
+    padding: 0;
+}
+.p-text-kevin{
+    letter-spacing: 0.2rem;
+    color: #1C618C;
+    padding: 0.5rem;
+    font-size: 0.6rem;
+
+}
+/*Iniciamos los estilos de header text del header*/
+.header-text{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    color: #1C618C;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+
+}
+
+/*creamos las partes de podomoro
+    1- recuadro donde van a digitalizar las tareas con su configuracion
+    1.1-recuadro donde se van a ver las tareas guardas
+    2-recuadro donde se va a ver el tiempo del podomoro y sus caracteristicas
+
+*/
+
+.cont-view-podomoro{
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.cont-tareas-podomoro{
+    width: 70%;
+    height: auto;
+    margin: 1rem;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px #1C618C solid;
+    border-radius: 1rem;
+}
+.cont-form-podomoro{
+    width: 50%;
+    height: 100%;
+    border: 1px #1C618C solid;
+    border-radius: 1rem;
+    
+}
+.cont-form-podomoro h4{
+    padding: 1rem;
+    color: #1C618C;
+}
+
+.podomoro{
+    width: 30%;
+    height: 50vh;
+    margin: 1rem;
+    border: 1px #1C618C solid;
+    border-radius: 1rem; 
+}
+
+.form-podomoro{
+    width: 90%;
+    height: 100%;
+    padding: 1rem;
+}
+.label-form{
+    display: block;
+    padding: 0.2rem;
+    color: #2889c5;
+}
+.input-podomoro{
+    background: none;
+    outline: none;
+    border: none;
+
+    width: 90%;
+    height: 2rem;
+    border: 1px #1C618C solid;
+    border-radius: 1rem;
+    text-align: center;
+}
+.cont-podomoro-timer{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    line-height: 3rem;
+}
+
+.group_check{
+    width: 200px;
+    position: relative;
+}
+.checkbox-timer{
+    appearance: none;
+    position: absolute;
+    bottom: 10px;
+    
+}
+.checkbox{
+    cursor: pointer;
+    width: 100px;
+    height: 5px;
+    border: 1px #1C618C solid;
+    border-radius: 2rem;
+}
+.checkbox:checked{
+    background-color: #1C618C;
+}
+.text-checkbox{
+    position: relative;
+    left: 0.5rem;
+    cursor: pointer;
+}
+.btn-podomoro-timer{
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+
+    border: 1px #1C618C solid;
+    border-radius: 1rem;
+    color: #1C618C;
+    cursor: pointer;
+}
+
+
+
+.group_checkBreak{
+    width: 110px;
+    position: relative;
+}
+
+.checkboxBreak{
+    appearance: none;
+    position: absolute;
+    bottom: 10px;
+}
+.Break{
+    cursor: pointer;
+    width: 100px;
+    height: 5px;
+    border: 1px #1C618C solid;
+    border-radius: 2rem;
+}
+.Break:checked{
+    background-color: #1C618C;
+}
+
+.input-rept{
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    outline: none;
+
+    border: 1px #1C618C solid;
+    border-radius: 1rem;
+    color: #1C618C;
+
+}
+.cont-podomoro-submit{
+    display: flex;
+    justify-content: end;
+}
+.cont-list-podomoro{
+    width: 45%;
+    height: 100%;
+    border: 1px #1C618C solid;
+    border-radius: 1rem;
+}
+
+.cont-list-podomoro h4{
+    padding: 1rem;
+    color: #1C618C;
+}
+
+.tabla-list{
+    border-collapse: collapse;
+    width: 90%;
+    margin: 0 auto;
+}
+.tabla-list th{
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+}
+.tabla-list td{
+    border: 1px solid #ddd;
+    font-size: 0.8rem;
+    padding: 5px;
+}
+.tabla-list tr:nth-child(even){background-color: #fcfbfb;}
+
+.tabla-list th{
+    text-align: left;
+    letter-spacing: 1px;
+    background-color: #1C618C;
+    color: white;
+    padding: 2px;
+}
+
+.podomoro-info{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.podomoro-info h2{
+    font-size: 2rem;
+    color: #1C618C;
+    letter-spacing: 0.5rem;
+}
+
+.podomoro-info p{
+    font-size: 3.5rem;
+}
+
+.podomoro-info button{
+    padding: 0.6rem;
+    width: 50%;
+    margin-top: 2rem;
+
+    background: none;
+    border: none;
+    outline: none;
+
+    border: 1px #b32302 solid;
+    border-radius: 1rem;
+    color: #fffffffe;
+    background: #b32302;
+    opacity: 0.5;
+    cursor: not-allowed;
+
+}
+
+.btn-iniciar{
+    background: none;
+    outline: none;
+    border: none;
+    background-color: #3fd300;
+    padding: 5px;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-eliminar{
+    background: none;
+    outline: none;
+    border: none;
+    background-color: #b32302;
+    padding: 5px;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
